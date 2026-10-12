@@ -1,0 +1,21 @@
+---
+date: 2026-10-12
+title: Redesigned session view
+description: Read user and assistant messages across traces in one continuous conversation, with a sidebar to navigate messages, traces, and tool usage.
+author: Ben
+ogImage: https://raw.githubusercontent.com/langfuse/langfuse/e66979efaccc16fc9018b024b19aff21ecedab12/web/public/assets/session-transcripts-intro.png
+---
+
+import { ChangelogHeader } from "@/components/changelog/ChangelogHeader";
+
+<ChangelogHeader />
+
+The redesigned session view brings user and assistant messages across traces into **one continuous conversation**, with a sidebar for navigating messages, traces, and tool usage.
+
+- **Debug conversations:** Follow the user's requests and the assistant's responses to find where an interaction went off track, then jump to the relevant trace.
+- **Inspect tool usage:** Use the sidebar to see which tools an agent called and where those calls fit into the conversation.
+- **Evaluate responses in context:** Review each response alongside earlier messages to assess whether the assistant understood the user and built on previous turns.
+
+## Get started
+
+Open **Sessions** in your project and select a session to explore its conversation. If you are not grouping traces into sessions yet, [set up a shared `sessionId`](/docs/observability/features/sessions#set-up-sessions) for observations belonging to the same interaction.
